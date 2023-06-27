@@ -6,13 +6,13 @@ function Cardinfo(){
             <div>
                 <Cards 
                     key={data.id}
-                    item={data}
+                    {...data}
                     />
                 
             </div>
         )
     })
-   
+   console.log(cards)
 return(
     <div className="Cards">
         {cards}
