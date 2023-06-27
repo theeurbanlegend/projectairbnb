@@ -1,15 +1,18 @@
 
 function Cards(props){
     return(
+        
         <div className="Card">
-            <img src={props.imgmain} className='Cardphoto'/>
+            
+            <img src={props.item.mainImg} className='Cardphoto'/>
             <div className="star-content">
-                <img src={props.starimg} className="Card-star"/> 
-                <p>{props.rating}<span className="star-des">({props.reviews})&#8226;{props.origin}</span></p>
+                <img src="../star.png" className="Card-star"/> 
+                <p>{props.item.stats.rating}<span className="star-des">({props.item.stats.reviews})&#8226;{props.item.location}</span></p>
             </div>
-            <p>{props.desc}</p>
-            <p><span>From ${props.pricing}</span> / person</p>
+            <p>{props.item.description}</p>
+            <p><span>From ${props.item.price}</span> / person</p>
         </div>
+        
     )
 }
 export default Cards

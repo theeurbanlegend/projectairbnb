@@ -6,13 +6,7 @@ function Cardinfo(){
             <div>
                 <Cards 
                     key={data.id}
-                    imgmain={data.mainImg}
-                    starimg="../star.png"
-                    rating={data.stats.rating}
-                    reviews={data.stats.reviews}
-                    origin={data.location}
-                    desc= {data.description}
-                    pricing={data.price} 
+                    item={data}
                     />
                 
             </div>
